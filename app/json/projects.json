@@ -1,0 +1,102 @@
+[
+  {
+    "title": "VGS",
+    "description": "VGS is a MERN stack application that allows you to save a list of your favorite video games. With VGS, you can easily keep track of the games you love and access them at any time from any device.",
+    "type": "Personal Project",
+    "stack": [
+      "React",
+      "NodeJS",
+      "Express",
+      "MongoDB",
+      "Bootstrap",
+      "Redux",
+      "OAuth",
+      "JWT",
+      "Responsive"
+    ],
+    "images": [
+      "/vgs/1.png",
+      "/vgs/2.png",
+      "/vgs/3.png",
+      "/vgs/4.png",
+      "/vgs/5.png",
+      "/vgs/6.png",
+      "/vgs/7.png",
+      "/vgs/8.png",
+      "/vgs/9.png"
+    ],
+    "urlProject": "https://video-games-vgs.netlify.app/",
+    "urlGithub": "https://github.com/DarielVasquez/videogames-mern-project",
+    "note": "The backend server takes a couple seconds to spin up. Demo User: 'admin', Password: 'password'."
+  },
+  {
+    "title": "ECShop",
+    "description": "ECShop is a React-based web application that provides users with a wide variety of products for online shopping. The application is designed to help users explore and purchase products conveniently from the comfort of their homes.",
+    "type": "Personal Project",
+    "stack": [
+      "TypeScript",
+      "React",
+      "Bootstrap",
+      "Redux Toolkit",
+      "Responsive"
+    ],
+    "images": [
+      "/ecshop/1.png",
+      "/ecshop/2.png",
+      "/ecshop/3.png",
+      "/ecshop/4.png",
+      "/ecshop/5.png",
+      "/ecshop/6.png",
+      "/ecshop/7.png",
+      "/ecshop/8.png",
+      "/ecshop/9.png"
+    ],
+    "urlProject": "https://fecshop.netlify.app/",
+    "urlGithub": "https://github.com/DarielVasquez/ecshop-project",
+    "note": "The FakeShop API is sometimes down so the app won't work as expected."
+  },
+  {
+    "title": "RRecipes",
+    "description": "RRecipes is a React-based web application that provides users with a wide variety of delicious recipes from around the world. The application is designed to help users discover new recipes, save their favorites, and organize their cooking adventures.",
+    "type": "Personal Project",
+    "stack": ["React", "Context-API", "Vanilla CSS", "Responsive"],
+    "images": [
+      "/rrecipes/1.png",
+      "/rrecipes/2.png",
+      "/rrecipes/3.png",
+      "/rrecipes/4.png",
+      "/rrecipes/5.png",
+      "/rrecipes/6.png"
+    ],
+    "urlProject": "https://recipes-rrp.netlify.app/",
+    "urlGithub": "https://github.com/DarielVasquez/rrecipes-project",
+    "note": "The Spoonacular API has a daily limit of 100 requests, the app will not make any more requests if the daily limit is reached."
+  },
+
+  {
+    "title": "EmailsDB",
+    "description": "EmailsDB is a database indexer written in Go that indexes a file-based MIME-emails database to a search engine called ZincSearch. It also includes a client-side interface built with Vue and Tailwind CSS for easy visualization of the emails data, and an API implemented using Chi router. Additionally, profiling is incorporated for performance analysis to optimize the indexing process.",
+    "type": "Personal Project",
+    "stack": ["Vue", "Tailwind", "Go", "Indexer", "ZincSearch", "Responsive"],
+    "images": ["/emailsdb/1.png", "/emailsdb/2.png", "/emailsdb/3.png"],
+    "urlProject": "",
+    "urlGithub": "https://github.com/DarielVasquez/emailsdb-project",
+    "note": ""
+  },
+  {
+    "title": "IRS",
+    "description": "IRS (Incident Report System) is a comprehensive web application built using the LAMP stack that simplifies incident management and reporting within organizations. With an intuitive interface, users can easily create detailed incident reports, track the progress of incidents, receive notifications and reminders, generate insightful reports, and enforce security measures.",
+    "type": "Fullstack Developer",
+    "stack": ["JavaScript", "Bootstrap", "Linux", "Apache", "MySQL", "PHP"],
+    "images": [
+      "/irs/1.png",
+      "/irs/2.png",
+      "/irs/3.png",
+      "/irs/4.png",
+      "/irs/5.png"
+    ],
+    "urlProject": "",
+    "urlGithub": "https://github.com/DarielVasquez/irs-lamp",
+    "note": ""
+  }
+]
