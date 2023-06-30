@@ -6,7 +6,7 @@ const FadeIn = ({ children, direction, order }) => {
   const delayValue = 150 * order + "ms";
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.05,
+    threshold: 0.01,
   });
 
   return (
