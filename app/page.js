@@ -7,6 +7,7 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { BsChevronDoubleDown } from "react-icons/bs";
 import technologies from "./json/technologies.json";
 import projects from "./json/projects.json";
 
@@ -14,77 +15,88 @@ export default function Home() {
   return (
     <main>
       <SmoothBackground>
-        <section className="flex lg:flex-row flex-col justify-evenly items-center min-h-screen container p-4 mx-auto">
-          <div className="flex flex-col justify-center gap-5 text-stone-800 min-h-[50vh] w-full lg:w-1/2 p-3 ">
-            <h4 className="text-xl md:text-2xl font-light">
-              Hello, my name is
-            </h4>
-            <div className="relative w-fit">
-              <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight">
-                Dariel Vasquez
-              </h1>
-              <div className="bg-teal-400 absolute top-[70%] left-[4%] h-5 lg:h-5 w-40 lg:w-40"></div>
+        <div id="home" className="bg-black bg-opacity-20">
+          <section className="relative z-10 flex lg:flex-row flex-col justify-end lg:justify-start items-center min-h-screen container p-4 mx-auto ">
+            <div className="flex flex-col justify-center gap-5 text-stone-100 min-h-[50vh] w-full lg:w-1/2 p-3 ">
+              <h4 className="text-lg sm:text-xl md:text-2xl font-extralight ">
+                Hello, my name is
+              </h4>
+              <div className="relative w-fit">
+                <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-teal-200">
+                  <span className="text-white">Dariel </span>
+                  Vasquez
+                </h1>
+                <div className="bg-teal-600 absolute top-[70%] left-[4%] h-5 lg:h-5 w-40 lg:w-40"></div>
+              </div>
+              <div className="relative w-fit">
+                <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-cyan-200">
+                  Full-Stack <span className="text-white">Developer</span>
+                </h1>
+                <div className="bg-cyan-600 absolute top-[70%] left-[54%] h-5 lg:h-5 w-40 lg:w-[280px]"></div>
+              </div>
+              <p className="text-base sm:text-lg md:text-xl font-extralight">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
+                in delectus? Numquam expedita delectus iusto alias adipisci
+                deleniti, quae aliquam voluptatibus harum nostrum tenetur soluta
+                et debitis accusantium inventore ullam.
+              </p>
+              <div className="text-2xl flex gap-2">
+                <a
+                  target="_blank"
+                  href="https://github.com/DarielVasquez"
+                  rel="noopener noreferrer"
+                  className="flex justify-center hover:text-teal-500"
+                >
+                  <FaGithub></FaGithub>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/dariel-vasquez-a53a18214/"
+                  rel="noopener noreferrer"
+                  className="flex justify-center hover:text-teal-500"
+                >
+                  <FaLinkedin></FaLinkedin>
+                </a>
+                <a
+                  target="_blank"
+                  href="mailto:darielalejandro10@gmail.com"
+                  rel="noopener noreferrer"
+                  className="flex justify-center hover:text-teal-500"
+                >
+                  <MdEmail></MdEmail>
+                </a>
+              </div>
             </div>
-            <div className="relative w-fit">
-              <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight">
-                Full-Stack Developer
-              </h1>
-              <div className="bg-cyan-400 absolute top-[70%] left-[54%] h-5 lg:h-5 w-40 lg:w-[280px]"></div>
-            </div>
-            <p className="text-xl md:text-2xl font-light">description</p>
-            <div className="text-2xl flex gap-2">
-              <a
-                target="_blank"
-                href="https://github.com/DarielVasquez"
-                rel="noopener noreferrer"
-                className="flex justify-center hover:text-teal-800"
-              >
-                <FaGithub></FaGithub>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/dariel-vasquez-a53a18214/"
-                rel="noopener noreferrer"
-                className="flex justify-center hover:text-teal-800"
-              >
-                <FaLinkedin></FaLinkedin>
-              </a>
-              <a
-                target="_blank"
-                href="mailto:darielalejandro10@gmail.com"
-                rel="noopener noreferrer"
-                className="flex justify-center hover:text-teal-800"
-              >
-                <MdEmail></MdEmail>
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col justify-center items-center min-h-[50vh] w-full lg:w-1/2 p-2">
-            Image
-          </div>
-        </section>
+            <a href="#about" className="flex sm:justify-center">
+              <BsChevronDoubleDown className="animate-bounce absolute bottom-4 sm:bottom-8 right-8 sm:right-auto text-2xl sm:text-4xl"></BsChevronDoubleDown>
+            </a>
+          </section>
+        </div>
       </SmoothBackground>
 
       <div className="relative z-100 mt-[100vh] grid lg:grid-cols-12 min-h-screen bg-white text-stone-800">
-        <section className="lg:col-span-4 text-white bg-stone-700">
+        <section
+          id="about"
+          className="lg:col-span-4 text-stone-100 bg-teal-950"
+        >
           <div className="flex flex-col lg:justify-around justify-center items-center gap-y-4 lg:min-h-screen min-h-[100vh] sticky top-0 p-5">
             <FadeIn>
-              <div className="p-8 xl:p-12 bg-stone-500 rounded-md">
-                <div className="py-4 xl:py-10 gap-8 w-[50vw] lg:w-full flex flex-col justify-center items-center">
+              <div className="p-8 xl:p-12 bg-teal-800 rounded-md">
+                <div className="relative z-10 py-4 xl:py-10 gap-8 w-[50vw] lg:w-full flex flex-col justify-center items-center">
                   <div className="relative">
-                    <h3 className="relative z-10 text-center text-xl font-extralight">
+                    <h3 className="relative z-10 text-center text-xl font-light brightness-200">
                       About Me
                     </h3>
-                    <div className="bg-teal-600 absolute top-[55%] left-[5%] h-3 w-24"></div>
+                    <div className="bg-teal-900 absolute top-[55%] left-[5%] h-3 w-24"></div>
                   </div>
                   <div className="flex justify-center rounded-full">
                     <img
                       className="shadow-[7px_7px_rgba(1,1,1,0.3)] object-cover h-24 w-24 sm:h-40 sm:w-40 xl:h-60 xl:w-60 rounded-3xl"
-                      src="/profile/profile.png"
+                      src="/profile/profile"
                       alt=""
                     />
                   </div>
-                  <p className="font-extralight text-xs sm:text-sm xl:text-base w-full sm:w-2/3 lg:w-full 2xl:w-2/3">
+                  <p className="font-extralight text-sm xl:text-base w-full sm:w-2/3 lg:w-full 2xl:w-2/3 brightness-200">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Fuga obcaecati autem at accusamus placeat amet molestias!
                     Aliquid, porro? Ea nam perspiciatis sint eaque tempore
@@ -92,12 +104,39 @@ export default function Home() {
                   </p>
                   <button>Resume</button>
                 </div>
+                <svg
+                  className="absolute z-0 bottom-0 right-0 min-w-full  rounded-md"
+                  viewBox="45 -5 200 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M141.184 19.2L190.753 96H91.6156L141.184 19.2Z"
+                    fill="#134e4a"
+                  />
+                  <path
+                    d="M171.711 38.4L208.061 96H135.36L171.711 38.4Z"
+                    fill="#134e4a"
+                  />
+                  <path
+                    d="M103.026 57.6L139.377 96H66.676L103.026 57.6Z"
+                    fill="#134e4a"
+                  />
+                  <path
+                    d="M228.947 0L281.82 96H176.074L228.947 0Z"
+                    fill="#134e4a"
+                  />
+                  <path
+                    d="M61.0526 0L113.926 96H8.1795L61.0526 0Z"
+                    fill="#134e4a"
+                  />
+                </svg>
               </div>
             </FadeIn>
           </div>
         </section>
         <section className="lg:col-span-8 overflow-x-hidden">
-          <section className="p-4 lg:p-12">
+          <section id="skills" className="p-4 lg:p-12">
             <FadeIn direction="right">
               <div className="flex flex-col justify-center items-center min-h-[50vh] p-4 lg:p-12">
                 <div className="relative">
@@ -142,7 +181,7 @@ export default function Home() {
           >
             <polygon fill=" rgb(245 245 244)" points="0,100 100,0 100,100" />
           </svg>
-          <section className="p-4 lg:p-12 bg-stone-100">
+          <section id="projects" className="p-4 lg:p-12 bg-stone-100">
             <FadeIn direction="right">
               <div className="flex justify-center">
                 <div className="relative w-fit">
@@ -234,7 +273,7 @@ export default function Home() {
           >
             <polygon fill="white" points="0,100 100,0 100,100" />
           </svg>
-          <section className="p-4 lg:p-12">
+          <section id="contact" className="p-4 lg:p-12">
             <FadeIn direction="right">
               <ContactForm></ContactForm>
             </FadeIn>
