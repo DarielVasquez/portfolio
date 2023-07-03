@@ -17,7 +17,7 @@ export default function Home() {
     <main>
       <SmoothBackground>
         <div id="home" className="bg-black bg-opacity-20">
-          <section className="relative z-10 flex lg:flex-row flex-col justify-end lg:justify-start items-center min-h-screen container p-4 mx-auto ">
+          <section className="relative z-10 flex lg:flex-row flex-col justify-end lg:justify-start items-center min-h-[100svh] container p-4 mx-auto ">
             <div className="flex flex-col justify-center gap-5 text-stone-100 min-h-[50vh] w-full lg:w-1/2 p-3 ">
               <h4 className="text-lg sm:text-xl md:text-2xl font-extralight ">
                 Hello, my name is
@@ -82,7 +82,7 @@ export default function Home() {
         </div>
       </SmoothBackground>
 
-      <div className="relative z-100 mt-[100vh] grid lg:grid-cols-12 min-h-screen bg-white text-stone-800">
+      <div className="relative z-100 mt-[100svh] grid lg:grid-cols-12 min-h-screen bg-white text-stone-800">
         <section
           id="about"
           className="lg:col-span-4 text-stone-100 bg-teal-950"
