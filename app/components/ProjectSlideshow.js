@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import ProjectModal from "./ProjectModal";
 
 const ImageSlider = ({ images, urlProject }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
