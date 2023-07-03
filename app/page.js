@@ -4,10 +4,11 @@ import FadeIn from "./components/FadeIn";
 import SmoothBackground from "./components/SmoothBackground";
 import ProjectSlideshow from "./components/ProjectSlideshow";
 import ContactForm from "./components/ContactForm";
+import ScrollToTop from "./components/ScrollToTop";
+import DoubleChevron from "./components/DoubleChevron";
 import Footer from "./components/Footer";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { BsChevronDoubleDown } from "react-icons/bs";
 import technologies from "./json/technologies.json";
 import projects from "./json/projects.json";
 
@@ -67,9 +68,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <a href="#about" className="flex sm:justify-center">
-              <BsChevronDoubleDown className="animate-bounce absolute bottom-4 sm:bottom-8 right-8 sm:right-auto text-2xl sm:text-4xl"></BsChevronDoubleDown>
-            </a>
+            <DoubleChevron></DoubleChevron>
           </section>
         </div>
       </SmoothBackground>
@@ -92,7 +91,7 @@ export default function Home() {
                   <div className="flex justify-center rounded-full">
                     <img
                       className="shadow-[7px_7px_rgba(1,1,1,0.3)] object-cover h-24 w-24 sm:h-40 sm:w-40 xl:h-60 xl:w-60 rounded-3xl"
-                      src="/profile/profile"
+                      src="/profile/profile.png"
                       alt=""
                     />
                   </div>
@@ -286,6 +285,7 @@ export default function Home() {
           >
             <polygon fill="#292524" points="0,100 100,0 100,100" />
           </svg>
+          <ScrollToTop></ScrollToTop>
           <Footer></Footer>
         </section>
       </div>
