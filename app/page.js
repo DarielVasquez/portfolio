@@ -22,18 +22,27 @@ export default function Home() {
               <h4 className="text-lg sm:text-xl md:text-2xl font-extralight ">
                 Hello, my name is
               </h4>
-              <div className="relative w-fit">
+              <div className="flex flex-wrap gap-3">
+                <div className="relative w-fit">
+                  <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-white">
+                    Dariel
+                  </h1>
+                  <div className="bg-teal-600 absolute top-[70%] left-[4%] h-3 md:h-5 w-[98%]"></div>
+                </div>
                 <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-teal-200">
-                  <span className="text-white">Dariel </span>
                   Vasquez
                 </h1>
-                <div className="bg-teal-600 absolute top-[70%] left-[4%] h-5 lg:h-5 w-40 lg:w-40"></div>
               </div>
-              <div className="relative w-fit">
+              <div className="flex flex-wrap gap-3">
                 <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-cyan-200">
-                  Full-Stack <span className="text-white">Developer</span>
+                  Full-Stack
                 </h1>
-                <div className="bg-cyan-600 absolute top-[70%] left-[54%] h-5 lg:h-5 w-40 lg:w-[280px]"></div>
+                <div className="relative w-fit">
+                  <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-white">
+                    Developer
+                  </h1>
+                  <div className="bg-cyan-600 absolute top-[70%] left-[4%] h-3 md:h-5 w-[98%]"></div>
+                </div>
               </div>
               <p className="text-base sm:text-lg md:text-xl font-extralight">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
