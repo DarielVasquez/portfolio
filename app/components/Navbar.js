@@ -52,35 +52,35 @@ const Navbar = () => {
         <ul className="text-stone-300 flex justify-evenly lg:justify-end gap-3 sm:gap-5">
           <li
             aria-haspopup="true"
-            className="lg:mr-auto cursor-pointer"
+            className="lg:mr-auto cursor-pointer hover:text-stone-100"
             onClick={() => scrollToTop()}
           >
             Home
           </li>
           <li
             aria-haspopup="true"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-stone-100"
             onClick={() => handleScrollToElement("about")}
           >
             About
           </li>
           <li
             aria-haspopup="true"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-stone-100"
             onClick={() => handleScrollToElement("skills")}
           >
             Skills
           </li>
           <li
             aria-haspopup="true"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-stone-100"
             onClick={() => handleScrollToElement("projects")}
           >
             Projects
           </li>
           <li
             aria-haspopup="true"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-stone-100"
             onClick={() => handleScrollToElement("contact")}
           >
             Contact

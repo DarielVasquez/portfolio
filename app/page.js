@@ -19,63 +19,73 @@ export default function Home() {
         <div id="home" className="bg-black bg-opacity-20">
           <section className="relative z-10 flex lg:flex-row flex-col justify-end lg:justify-start items-center min-h-[100svh] container p-4 mx-auto ">
             <div className="flex flex-col justify-center gap-5 text-stone-100 min-h-[50vh] w-full lg:w-1/2 p-3 ">
-              <h4 className="text-lg sm:text-xl md:text-2xl font-extralight ">
-                Hello, my name is
-              </h4>
-              <div className="flex flex-wrap gap-3">
-                <div className="relative w-fit">
-                  <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-white">
-                    Dariel
+              <FadeIn>
+                <h4 className="text-lg sm:text-xl md:text-2xl font-extralight ">
+                  Hello, my name is
+                </h4>
+              </FadeIn>
+              <FadeIn order="1">
+                <div className="flex flex-wrap gap-3">
+                  <div className="relative w-fit">
+                    <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-white">
+                      Dariel
+                    </h1>
+                    <div className="bg-teal-600 absolute top-[70%] left-[4%] h-3 md:h-5 w-[98%]"></div>
+                  </div>
+                  <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-teal-200">
+                    Vasquez
                   </h1>
-                  <div className="bg-teal-600 absolute top-[70%] left-[4%] h-3 md:h-5 w-[98%]"></div>
                 </div>
-                <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-teal-200">
-                  Vasquez
-                </h1>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-cyan-200">
-                  Full-Stack
-                </h1>
-                <div className="relative w-fit">
-                  <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-white">
-                    Developer
+              </FadeIn>
+              <FadeIn order="2">
+                <div className="flex flex-wrap gap-3">
+                  <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-cyan-200">
+                    Full-Stack
                   </h1>
-                  <div className="bg-cyan-600 absolute top-[70%] left-[4%] h-3 md:h-5 w-[98%]"></div>
+                  <div className="relative w-fit">
+                    <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-white">
+                      Developer
+                    </h1>
+                    <div className="bg-cyan-600 absolute top-[70%] left-[4%] h-3 md:h-5 w-[98%]"></div>
+                  </div>
                 </div>
-              </div>
-              <p className="text-base sm:text-lg md:text-xl font-extralight">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
-                in delectus? Numquam expedita delectus iusto alias adipisci
-                deleniti, quae aliquam voluptatibus harum nostrum tenetur soluta
-                et debitis accusantium inventore ullam.
-              </p>
-              <div className="text-2xl flex gap-2">
-                <a
-                  target="_blank"
-                  href="https://github.com/DarielVasquez"
-                  rel="noopener noreferrer"
-                  className="flex justify-center hover:text-teal-500"
-                >
-                  <FaGithub></FaGithub>
-                </a>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/dariel-vasquez-a53a18214/"
-                  rel="noopener noreferrer"
-                  className="flex justify-center hover:text-teal-500"
-                >
-                  <FaLinkedin></FaLinkedin>
-                </a>
-                <a
-                  target="_blank"
-                  href="mailto:darielalejandro10@gmail.com"
-                  rel="noopener noreferrer"
-                  className="flex justify-center hover:text-teal-500"
-                >
-                  <MdEmail></MdEmail>
-                </a>
-              </div>
+              </FadeIn>
+              <FadeIn order="3">
+                <p className="text-base sm:text-lg md:text-xl font-extralight">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
+                  in delectus? Numquam expedita delectus iusto alias adipisci
+                  deleniti, quae aliquam voluptatibus harum nostrum tenetur
+                  soluta et debitis accusantium inventore ullam.
+                </p>
+              </FadeIn>
+              <FadeIn order="4">
+                <div className="text-2xl flex gap-2">
+                  <a
+                    target="_blank"
+                    href="https://github.com/DarielVasquez"
+                    rel="noopener noreferrer"
+                    className="flex justify-center hover:text-teal-500"
+                  >
+                    <FaGithub></FaGithub>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/dariel-vasquez-a53a18214/"
+                    rel="noopener noreferrer"
+                    className="flex justify-center hover:text-teal-500"
+                  >
+                    <FaLinkedin></FaLinkedin>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="mailto:darielalejandro10@gmail.com"
+                    rel="noopener noreferrer"
+                    className="flex justify-center hover:text-teal-500"
+                  >
+                    <MdEmail></MdEmail>
+                  </a>
+                </div>
+              </FadeIn>
             </div>
             <DoubleChevron></DoubleChevron>
           </section>
