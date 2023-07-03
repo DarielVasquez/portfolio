@@ -24,7 +24,7 @@ const ScrollToTop = () => {
 
   return (
     <button
-      className={`fixed z-50 bottom-5 right-5 w-10 h-10 flex justify-center items-center bg-[#003C42] text-[#fff] rounded-full cursor-pointer transition-all duration-500 ${
+      className={`fixed z-50 bottom-5 right-5 w-10 h-10 flex justify-center items-center bg-[#003C42] hover:bg-[#062427] text-[#fff] rounded-full cursor-pointer transition-all duration-500 ${
         isVisible ? "visible opacity-100" : "invisible opacity-0"
       }`}
       onClick={scrollToTop}

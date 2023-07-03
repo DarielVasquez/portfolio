@@ -110,7 +110,14 @@ export default function Home() {
                     Aliquid, porro? Ea nam perspiciatis sint eaque tempore
                     voluptatem vitae aut nesciunt ipsum fuga?
                   </p>
-                  <button>Resume</button>
+                  <a
+                    className="shadow-[7px_7px_rgba(1,1,1,0.3)] text-xs sm:text-sm bg-teal-600 text-white rounded-md p-2 transition ease-in-out hover:shadow-[5px_5px_rgba(1,1,1,0.3)] hover:bg-teal-700 w-24 sm:w-28 text-center"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1cRnVaBv8efdOWdKaeNSY1OKNAbj6jCi8/view?usp=sharing"
+                    rel="noopener noreferrer"
+                  >
+                    Resume
+                  </a>
                 </div>
                 <svg
                   className="absolute z-0 bottom-0 right-0 min-w-full  rounded-md"
