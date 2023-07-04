@@ -14,44 +14,34 @@ import projects from "./json/projects.json";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       <SmoothBackground>
         <div id="home" className="bg-black bg-opacity-20">
           <section className="relative z-10 flex lg:flex-row flex-col justify-end lg:justify-start items-center min-h-[100svh] container p-4 mx-auto ">
-            <div className="flex flex-col justify-center gap-5 text-stone-100 min-h-[50vh] w-full lg:w-1/2 p-3 ">
+            <div className="flex flex-col justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 text-stone-100 min-h-[50vh] w-full lg:w-1/2 p-3 ">
               <FadeIn>
-                <h4 className="text-lg sm:text-xl md:text-2xl font-extralight ">
+                <h4 className="text-sm sm:text-base md:text-xl xl:text-xl font-extralight ">
                   Hello, my name is
                 </h4>
               </FadeIn>
               <FadeIn order="1">
-                <div className="flex flex-wrap gap-3">
-                  <div className="relative w-fit">
-                    <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-white">
-                      Dariel
-                    </h1>
-                    <div className="bg-teal-600 absolute top-[70%] left-[4%] h-3 md:h-5 w-[98%]"></div>
-                  </div>
-                  <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-teal-200">
-                    Vasquez
-                  </h1>
-                </div>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extralight text-teal-200">
+                  <span className="text-white relative after:content-[''] after:bg-teal-600 after:absolute after:z-[-1] after:top-[70%] after:left-[4%] after:h-3 md:after:h-5 after:w-[98%]">
+                    Dariel
+                  </span>{" "}
+                  Vasquez
+                </h1>
               </FadeIn>
               <FadeIn order="2">
-                <div className="flex flex-wrap gap-3">
-                  <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-cyan-200">
-                    Full-Stack
-                  </h1>
-                  <div className="relative w-fit">
-                    <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extralight text-white">
-                      Developer
-                    </h1>
-                    <div className="bg-cyan-600 absolute top-[70%] left-[4%] h-3 md:h-5 w-[98%]"></div>
-                  </div>
-                </div>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extralight text-cyan-200">
+                  Full-Stack{" "}
+                  <span className="text-white relative after:content-[''] after:bg-cyan-600 after:absolute after:z-[-1] after:top-[70%] after:left-[4%] after:h-3 md:after:h-5 after:w-[98%]">
+                    Developer
+                  </span>
+                </h1>
               </FadeIn>
               <FadeIn order="3">
-                <p className="text-base sm:text-lg md:text-xl font-extralight">
+                <p className="text-sm sm:text-base md:text-lg xl:text-xl font-extralight">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
                   in delectus? Numquam expedita delectus iusto alias adipisci
                   deleniti, quae aliquam voluptatibus harum nostrum tenetur
@@ -92,7 +82,7 @@ export default function Home() {
         </div>
       </SmoothBackground>
 
-      <div className="relative z-100 mt-[100svh] grid lg:grid-cols-12 min-h-screen bg-white text-stone-800">
+      <div className="relative grid lg:grid-cols-12 min-h-screen bg-white text-stone-800">
         <section
           id="about"
           className="lg:col-span-4 text-stone-100 bg-teal-950"
