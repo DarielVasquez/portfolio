@@ -19,7 +19,7 @@ const DoubleChevron = () => {
       onClick={() => handleScrollToElement("about")}
       className="flex sm:justify-center"
     >
-      <BsChevronDoubleDown className="animate-bounce absolute bottom-4 cursor-pointer sm:bottom-8 right-8 sm:right-auto text-2xl sm:text-4xl hover:text-stone-300"></BsChevronDoubleDown>
+      <BsChevronDoubleDown className="animate-bounce absolute bottom-4 cursor-pointer sm:bottom-8 right-8 sm:right-auto text-2xl sm:text-4xl text-stone-100 hover:text-stone-300"></BsChevronDoubleDown>
     </div>
   );
 };
