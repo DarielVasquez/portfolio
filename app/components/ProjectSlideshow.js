@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const ImageSlider = ({ images, urlProject }) => {
@@ -25,8 +26,10 @@ const ImageSlider = ({ images, urlProject }) => {
         rel="noopener noreferrer"
         className="flex justify-center"
       >
-        <img
+        <Image
           src={images[currentImageIndex]}
+          height={1000}
+          width={1000}
           alt="Slideshow Image"
           className="object-contain max-w-[80%] drop-shadow-[7px_7px_rgba(1,1,1,0.3)] transition ease-in-out hover:drop-shadow-[5px_5px_rgba(1,1,1,0.3)] hover:opacity-70 rounded-md"
         />

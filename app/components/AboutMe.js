@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 const AboutMe = () => {
@@ -43,14 +44,16 @@ const AboutMe = () => {
                 <div className="bg-teal-900 absolute top-[55%] left-[5%] h-3 w-24"></div>
               </div>
               <div className="flex justify-center rounded-full">
-                <img
+                <Image
                   className={`shadow-[7px_7px_rgba(1,1,1,0.3)] object-cover rounded-3xl w-[60%] h-auto ${
                     isHorizontal
                       ? "lg:h-[25vh] lg:w-auto"
                       : "lg:w-[70%] lg:h-auto"
                   }`}
+                  width={600}
+                  height={600}
                   src="/profile/profile.png"
-                  alt="Profile Picture Dariel Vasquez"
+                  alt="Profile Picture: Dariel Vasquez"
                 />
               </div>
               <p

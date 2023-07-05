@@ -18,7 +18,11 @@ const Scroll = ({ children, element }) => {
     }
   };
   return (
-    <div className="inline" onClick={() => handleScrollToElement(element)}>
+    <div
+      className="inline"
+      aria-haspopup="true"
+      onClick={() => handleScrollToElement(element)}
+    >
       {children}
     </div>
   );
