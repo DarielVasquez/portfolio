@@ -33,34 +33,19 @@ const Navbar = () => {
     >
       <div className="container mx-auto py-2 md:py-3 lg:py-4 px-8">
         <ul className="text-stone-300 flex justify-evenly lg:justify-end gap-3 sm:gap-5">
-          <li
-            aria-haspopup="true"
-            className="lg:mr-auto cursor-pointer hover:text-stone-100"
-          >
+          <li className="lg:mr-auto cursor-pointer hover:text-stone-100">
             <Scroll element="home">Home</Scroll>
           </li>
-          <li
-            aria-haspopup="true"
-            className="cursor-pointer hover:text-stone-100"
-          >
+          <li className="cursor-pointer hover:text-stone-100">
             <Scroll element="about">About</Scroll>
           </li>
-          <li
-            aria-haspopup="true"
-            className="cursor-pointer hover:text-stone-100"
-          >
+          <li className="cursor-pointer hover:text-stone-100">
             <Scroll element="skills">Skills</Scroll>
           </li>
-          <li
-            aria-haspopup="true"
-            className="cursor-pointer hover:text-stone-100"
-          >
+          <li className="cursor-pointer hover:text-stone-100">
             <Scroll element="projects">Projects</Scroll>
           </li>
-          <li
-            aria-haspopup="true"
-            className="cursor-pointer hover:text-stone-100"
-          >
+          <li className="cursor-pointer hover:text-stone-100">
             <Scroll element="contact">Contact</Scroll>
           </li>
         </ul>

@@ -28,7 +28,7 @@ const SmoothBackground = ({ children }) => {
       return `${xPercentage}% ${yPercentage}%`;
     }
 
-    return "5% 5%";
+    return "0% 0%";
   };
 
   return (

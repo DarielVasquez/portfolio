@@ -60,12 +60,14 @@ const AboutMe = () => {
                 }`}
               >
                 My name is <span className="font-normal">Dariel Vasquez</span>,
-                I'm a{" "}
+                I&apos;m a{" "}
                 <span className="font-normal">computer science engineer</span>{" "}
                 and a <span className="font-normal">full-stack developer</span>.
                 Passionate about continuous learning and solving complex
                 problems, I thrive in dynamic environments.{" "}
-                <span className="font-normal text-teal-200">Let's connect</span>{" "}
+                <span className="font-normal text-teal-200">
+                  Let&apos;s connect
+                </span>{" "}
                 and discuss how I can contribute to your projects.
               </p>
               <a
