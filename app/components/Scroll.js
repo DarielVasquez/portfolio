@@ -16,7 +16,6 @@ const Scroll = ({ children, element }) => {
         behavior: "smooth",
       });
     }
-    console.log(element);
   };
   return (
     <div className="inline" onClick={() => handleScrollToElement(element)}>

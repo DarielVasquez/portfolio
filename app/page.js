@@ -46,8 +46,8 @@ export default function Home() {
                   <span className="text-cyan-200">
                     Ready to level up your team?
                   </span>{" "}
-                  I'm passionate about solving complex problems and building
-                  innovative solutions. Explore my{" "}
+                  I&apos;m passionate about solving complex problems and
+                  building innovative solutions. Explore my{" "}
                   <Scroll element="projects">
                     <span className=" text-teal-200 font-normal cursor-pointer hover:underline underline-offset-4 hover:decoration-teal-300 hover:text-teal-300">
                       portfolio
@@ -56,7 +56,7 @@ export default function Home() {
                   to see how I can contribute to your team.{" "}
                   <Scroll element="contact">
                     <span className=" text-teal-200 font-normal cursor-pointer hover:underline underline-offset-4 hover:decoration-teal-300 hover:text-teal-300">
-                      Let's connect!
+                      Let&apos;s connect!
                     </span>
                   </Scroll>
                 </div>
