@@ -1,14 +1,15 @@
 import Image from "next/image";
-import Link from "next/link";
 import FadeIn from "./components/FadeIn";
 import SmoothBackground from "./components/SmoothBackground";
+import AboutMe from "./components/AboutMe";
 import ProjectSlideshow from "./components/ProjectSlideshow";
 import ContactForm from "./components/ContactForm";
-import ScrollToTop from "./components/ScrollToTop";
-import DoubleChevron from "./components/DoubleChevron";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+import Scroll from "./components/Scroll";
 import Footer from "./components/Footer";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { BsChevronDoubleDown } from "react-icons/bs";
 import technologies from "./json/technologies.json";
 import projects from "./json/projects.json";
 
@@ -17,16 +18,16 @@ export default function Home() {
     <main className="relative">
       <SmoothBackground>
         <div id="home" className="bg-black bg-opacity-20">
-          <section className="relative z-10 flex lg:flex-row flex-col justify-end lg:justify-start items-center min-h-[100svh] container p-4 mx-auto ">
+          <section className="relative z-10 flex lg:flex-row flex-col justify-end lg:justify-start items-center min-h-[480px] h-[100svh] container p-4 mx-auto ">
             <div className="flex flex-col justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 text-stone-100 min-h-[50vh] w-full lg:w-1/2 p-3 ">
               <FadeIn>
-                <h4 className="text-sm sm:text-base md:text-xl xl:text-xl font-extralight ">
+                <h4 className="text-base sm:text-lg md:text-xl xl:text-2xl font-extralight ">
                   Hello, my name is
                 </h4>
               </FadeIn>
               <FadeIn order="1">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extralight text-teal-200">
-                  <span className="text-white relative after:content-[''] after:bg-teal-600 after:absolute after:z-[-1] after:top-[70%] after:left-[4%] after:h-3 md:after:h-5 after:w-[98%]">
+                  <span className="text-white relative after:content-[''] after:bg-teal-600 after:absolute after:z-[-1] after:top-[70%] after:left-[4%] after:h-3 lg:after:h-5 after:w-[98%]">
                     Dariel
                   </span>{" "}
                   Vasquez
@@ -35,18 +36,30 @@ export default function Home() {
               <FadeIn order="2">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extralight text-cyan-200">
                   Full-Stack{" "}
-                  <span className="text-white relative after:content-[''] after:bg-cyan-600 after:absolute after:z-[-1] after:top-[70%] after:left-[4%] after:h-3 md:after:h-5 after:w-[98%]">
+                  <span className="text-white relative after:content-[''] after:bg-cyan-600 after:absolute after:z-[-1] after:top-[70%] after:left-[4%] after:h-3 lg:after:h-5 after:w-[98%]">
                     Developer
                   </span>
                 </h1>
               </FadeIn>
               <FadeIn order="3">
-                <p className="text-sm sm:text-base md:text-lg xl:text-xl font-extralight">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
-                  in delectus? Numquam expedita delectus iusto alias adipisci
-                  deleniti, quae aliquam voluptatibus harum nostrum tenetur
-                  soluta et debitis accusantium inventore ullam.
-                </p>
+                <div className="text-sm sm:text-base md:text-lg xl:text-xl font-extralight max-w-[55ch]">
+                  <span className="text-cyan-200">
+                    Ready to level up your team?
+                  </span>{" "}
+                  I'm passionate about solving complex problems and building
+                  innovative solutions. Explore my{" "}
+                  <Scroll element="projects">
+                    <span className=" text-teal-200 font-normal cursor-pointer hover:underline underline-offset-4 hover:decoration-teal-300 hover:text-teal-300">
+                      portfolio
+                    </span>{" "}
+                  </Scroll>
+                  to see how I can contribute to your team.{" "}
+                  <Scroll element="contact">
+                    <span className=" text-teal-200 font-normal cursor-pointer hover:underline underline-offset-4 hover:decoration-teal-300 hover:text-teal-300">
+                      Let's connect!
+                    </span>
+                  </Scroll>
+                </div>
               </FadeIn>
               <FadeIn order="4">
                 <div className="text-2xl flex gap-2">
@@ -77,79 +90,17 @@ export default function Home() {
                 </div>
               </FadeIn>
             </div>
-            <DoubleChevron></DoubleChevron>
+            <Scroll element="about">
+              <div className="flex sm:justify-center">
+                <BsChevronDoubleDown className="animate-bounce absolute bottom-3 cursor-pointer sm:portrait:bottom-8 right-8 sm:right-auto text-2xl sm:text-4xl text-stone-100 hover:text-stone-300"></BsChevronDoubleDown>
+              </div>
+            </Scroll>
           </section>
         </div>
       </SmoothBackground>
 
       <div className="relative grid lg:grid-cols-12 min-h-screen bg-white text-stone-800">
-        <section
-          id="about"
-          className="lg:col-span-4 text-stone-100 bg-teal-950"
-        >
-          <div className="flex flex-col lg:justify-around justify-center items-center gap-y-4 lg:min-h-screen min-h-[100vh] sticky top-0 p-5">
-            <FadeIn>
-              <div className="p-8 xl:p-12 bg-teal-800 rounded-md">
-                <div className="relative z-10 py-4 xl:py-10 gap-8 w-[50vw] lg:w-full flex flex-col justify-center items-center">
-                  <div className="relative">
-                    <h3 className="relative z-10 text-center text-xl font-light brightness-200">
-                      About Me
-                    </h3>
-                    <div className="bg-teal-900 absolute top-[55%] left-[5%] h-3 w-24"></div>
-                  </div>
-                  <div className="flex justify-center rounded-full">
-                    <img
-                      className="shadow-[7px_7px_rgba(1,1,1,0.3)] object-cover h-24 w-24 sm:h-40 sm:w-40 xl:h-60 xl:w-60 rounded-3xl"
-                      src="/profile/profile.png"
-                      alt=""
-                    />
-                  </div>
-                  <p className="font-extralight text-sm xl:text-base w-full sm:w-2/3 lg:w-full 2xl:w-2/3 brightness-200">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga obcaecati autem at accusamus placeat amet molestias!
-                    Aliquid, porro? Ea nam perspiciatis sint eaque tempore
-                    voluptatem vitae aut nesciunt ipsum fuga?
-                  </p>
-                  <a
-                    className="shadow-[7px_7px_rgba(1,1,1,0.3)] text-xs sm:text-sm bg-teal-600 text-white rounded-md p-2 transition ease-in-out hover:shadow-[5px_5px_rgba(1,1,1,0.3)] hover:bg-teal-700 w-24 sm:w-28 text-center"
-                    target="_blank"
-                    href="https://drive.google.com/file/d/1cRnVaBv8efdOWdKaeNSY1OKNAbj6jCi8/view?usp=sharing"
-                    rel="noopener noreferrer"
-                  >
-                    Resume
-                  </a>
-                </div>
-                <svg
-                  className="absolute z-0 bottom-0 right-0 min-w-full  rounded-md"
-                  viewBox="45 -5 200 100"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M141.184 19.2L190.753 96H91.6156L141.184 19.2Z"
-                    fill="#134e4a"
-                  />
-                  <path
-                    d="M171.711 38.4L208.061 96H135.36L171.711 38.4Z"
-                    fill="#134e4a"
-                  />
-                  <path
-                    d="M103.026 57.6L139.377 96H66.676L103.026 57.6Z"
-                    fill="#134e4a"
-                  />
-                  <path
-                    d="M228.947 0L281.82 96H176.074L228.947 0Z"
-                    fill="#134e4a"
-                  />
-                  <path
-                    d="M61.0526 0L113.926 96H8.1795L61.0526 0Z"
-                    fill="#134e4a"
-                  />
-                </svg>
-              </div>
-            </FadeIn>
-          </div>
-        </section>
+        <AboutMe></AboutMe>
         <section className="lg:col-span-8 overflow-x-hidden">
           <section id="skills" className="p-4 lg:p-12">
             <FadeIn direction="right">
@@ -301,7 +252,7 @@ export default function Home() {
           >
             <polygon fill="#292524" points="0,100 100,0 100,100" />
           </svg>
-          <ScrollToTop></ScrollToTop>
+          <ScrollToTopButton></ScrollToTopButton>
           <Footer></Footer>
         </section>
       </div>

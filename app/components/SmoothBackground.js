@@ -33,7 +33,7 @@ const SmoothBackground = ({ children }) => {
 
   return (
     <div
-      className="sticky inset-x-0 top-0 bg-cover bg-[#003C42]"
+      className="sticky landscape:relative lg:landscape:sticky inset-x-0 top-0 bg-cover bg-[#003C42]"
       style={{
         backgroundPosition: calculateBackgroundPosition(),
         backgroundImage: `url(/background/mountain.png)`,
