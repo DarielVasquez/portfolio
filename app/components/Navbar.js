@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Scroll from "./Scroll";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -22,24 +23,6 @@ const Navbar = () => {
     };
   }, [prevScrollPos]);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const handleScrollToElement = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const { top } = element.getBoundingClientRect();
-      window.scrollTo({
-        top: window.pageYOffset + top,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <nav
       id="navbar"
@@ -53,37 +36,32 @@ const Navbar = () => {
           <li
             aria-haspopup="true"
             className="lg:mr-auto cursor-pointer hover:text-stone-100"
-            onClick={() => scrollToTop()}
           >
-            Home
+            <Scroll element="home">Home</Scroll>
           </li>
           <li
             aria-haspopup="true"
             className="cursor-pointer hover:text-stone-100"
-            onClick={() => handleScrollToElement("about")}
           >
-            About
+            <Scroll element="about">About</Scroll>
           </li>
           <li
             aria-haspopup="true"
             className="cursor-pointer hover:text-stone-100"
-            onClick={() => handleScrollToElement("skills")}
           >
-            Skills
+            <Scroll element="skills">Skills</Scroll>
           </li>
           <li
             aria-haspopup="true"
             className="cursor-pointer hover:text-stone-100"
-            onClick={() => handleScrollToElement("projects")}
           >
-            Projects
+            <Scroll element="projects">Projects</Scroll>
           </li>
           <li
             aria-haspopup="true"
             className="cursor-pointer hover:text-stone-100"
-            onClick={() => handleScrollToElement("contact")}
           >
-            Contact
+            <Scroll element="contact">Contact</Scroll>
           </li>
         </ul>
       </div>
