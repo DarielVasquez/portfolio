@@ -76,9 +76,9 @@ const AboutMe = () => {
               <a
                 className={`shadow-[7px_7px_rgba(1,1,1,0.3)] text-xs sm:text-sm bg-teal-600 text-white rounded-md p-2 ${
                   isHorizontal && "lg:text-xs"
-                } transition ease-in-out hover:shadow-[5px_5px_rgba(1,1,1,0.3)] hover:bg-teal-700 w-24 sm:w-28 text-center`}
+                } transition ease-in-out hover:shadow-[5px_5px_rgba(1,1,1,0.3)] cursor-pointer hover:bg-teal-700 w-24 sm:w-28 text-center`}
                 target="_blank"
-                href="https://drive.google.com/file/d/1cRnVaBv8efdOWdKaeNSY1OKNAbj6jCi8/view?usp=sharing"
+                href={process.env.RESUME_URL}
                 rel="noopener noreferrer"
               >
                 Resume
