@@ -145,7 +145,7 @@ export default function Home() {
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
           >
-            <polygon fill=" rgb(245 245 244)" points="0,100 100,0 100,100" />
+            <polygon className="fill-stone-100" points="0,100 100,0 100,100" />
           </svg>
           <section id="projects" className="p-4 lg:p-12 bg-stone-100">
             <FadeIn direction="right">
@@ -232,12 +232,12 @@ export default function Home() {
             </div>
           </section>
           <svg
-            className="max-h-[10vw] w-full bg-stone-100"
+            className="max-h-[10vw] w-full rotate-180"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
           >
-            <polygon fill="white" points="0,100 100,0 100,100" />
+            <polygon className="fill-stone-100" points="0,100 100,0 100,100" />
           </svg>
           <section id="contact" className="p-4 lg:p-12">
             <FadeIn direction="right">
@@ -250,7 +250,7 @@ export default function Home() {
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
           >
-            <polygon fill="#292524" points="0,100 100,0 100,100" />
+            <polygon className="fill-stone-800" points="0,100 100,0 100,100" />
           </svg>
           <ScrollToTopButton></ScrollToTopButton>
           <Footer></Footer>
