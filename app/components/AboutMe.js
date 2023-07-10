@@ -24,13 +24,16 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section id="about" className="lg:col-span-4 text-stone-100 bg-teal-950">
+    <section
+      id="about"
+      className="lg:col-span-4 text-stone-100 bg-teal-950 dark:bg-teal-950"
+    >
       <div className="flex flex-col lg:justify-around justify-center items-center gap-y-4 min-h-[100vh] lg:min-h-screen sticky top-0 p-5">
         <FadeIn>
           <div
             className={`${
               isHorizontal ? "p-6" : "p-8 xl:p-12 xl:py-8"
-            } bg-teal-800 rounded-md lg:max-h-[90svh] overflow-hidden`}
+            } bg-teal-800 dark:bg-teal-800 rounded-md lg:max-h-[90svh] overflow-hidden`}
           >
             <div
               className={`relative z-10 gap-8 py-4 ${
@@ -41,7 +44,7 @@ const AboutMe = () => {
                 <h3 className="relative z-10 text-center text-xl font-light brightness-200">
                   About Me
                 </h3>
-                <div className="bg-teal-900 absolute top-[55%] left-[5%] h-3 w-24"></div>
+                <div className="bg-teal-900 dark:bg-teal-900 absolute top-[55%] left-[5%] h-3 w-24"></div>
               </div>
               <div className="flex justify-center rounded-full">
                 <Image
@@ -74,7 +77,7 @@ const AboutMe = () => {
                 and discuss how I can contribute to your projects.
               </p>
               <a
-                className={`shadow-[7px_7px_rgba(1,1,1,0.3)] text-xs sm:text-sm bg-teal-600 text-white rounded-md p-2 ${
+                className={`shadow-[7px_7px_rgba(1,1,1,0.3)] text-xs sm:text-sm bg-teal-600 dark:bg-teal-600 text-white rounded-md p-2 ${
                   isHorizontal && "lg:text-xs"
                 } transition ease-in-out hover:shadow-[5px_5px_rgba(1,1,1,0.3)] cursor-pointer hover:bg-teal-700 w-24 sm:w-28 text-center`}
                 target="_blank"

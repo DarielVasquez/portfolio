@@ -17,7 +17,10 @@ export default function Home() {
   return (
     <main className="relative">
       <SmoothBackground>
-        <div id="home" className="bg-black bg-opacity-20">
+        <div
+          id="home"
+          className="bg-black bg-opacity-20 dark:bg-black dark:bg-opacity-20"
+        >
           <section className="relative z-10 flex lg:flex-row flex-col justify-end lg:justify-start items-center min-h-[480px] h-[100svh] container p-4 mx-auto ">
             <div className="flex flex-col justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 text-stone-100 min-h-[50vh] w-full lg:w-1/2 p-3 ">
               <FadeIn>
@@ -99,7 +102,7 @@ export default function Home() {
         </div>
       </SmoothBackground>
 
-      <div className="relative grid lg:grid-cols-12 min-h-screen bg-white text-stone-800">
+      <div className="relative grid lg:grid-cols-12 min-h-screen bg-white dark:bg-white text-stone-800">
         <AboutMe></AboutMe>
         <section className="lg:col-span-8 overflow-x-hidden">
           <section id="skills" className="p-4 lg:p-12">
@@ -147,7 +150,10 @@ export default function Home() {
           >
             <polygon className="fill-stone-100" points="0,100 100,0 100,100" />
           </svg>
-          <section id="projects" className="p-4 lg:p-12 bg-stone-100">
+          <section
+            id="projects"
+            className="p-4 lg:p-12 bg-stone-100 dark:bg-stone-100"
+          >
             <FadeIn direction="right">
               <div className="flex justify-center">
                 <div className="relative w-fit">
@@ -181,7 +187,7 @@ export default function Home() {
                             {stack.map((name, k) => {
                               return (
                                 <span
-                                  className="px-2 py-1 rounded-full bg-stone-500 text-white text-sm cursor-default"
+                                  className="px-2 py-1 rounded-full bg-stone-500 dark:bg-stone-500 text-white text-sm cursor-default"
                                   key={k}
                                 >
                                   {name}
